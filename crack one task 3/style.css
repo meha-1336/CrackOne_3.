@@ -1,0 +1,144 @@
+:root {
+
+    --primary: #685bf7;
+    --secondary: #4CAF50;
+    --accent: #e4423c;
+    --dark: #222;
+    --light: #f9f9f9;
+
+    --font-main: 'Segoe UI', sans-serif;
+    --h1: 40px;
+    --h2: 28px;
+    --text: 16px;
+
+    --padding: 20px;
+    --radius: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background: var(--light);
+    scroll-behavior: smooth;
+}
+
+h1 { font-size: var(--h1); }
+h2 { font-size: var(--h2); }
+p { font-size: var(--text); }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: var(--primary);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--accent);
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    color: white;
+}
+
+.btn-secondary:hover {
+    opacity: 0.8;
+}
+
+.btn:disabled {
+    background: grey;
+    cursor: not-allowed;
+}
+
+.section {
+    padding: 60px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    width: 220px;
+    background: white;
+    padding: var(--padding);
+    border-radius: var(--radius);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-box input {
+    padding: 12px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact {
+    background: var(--dark);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
