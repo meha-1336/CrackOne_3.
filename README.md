@@ -13,6 +13,7 @@ Support efficient design-to-development workflow
 
 ✨ Features
 🎨 Defined color palette and typography
+
 🧩 Reusable UI components
 🔄 Multiple states (hover, active, disabled)
 📱 Clean and minimal layout
